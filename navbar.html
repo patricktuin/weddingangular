@@ -1,0 +1,33 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a href="#" class="navbar-brand">De Bruiloft</a>
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse navHeaderCollapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-class="{ active:tab.isSet('home') }">
+          <a ng-click="tab.setTab('home')" href="#">Home</a></li>
+        <li ng-class="{ active:tab.isSet('programma') }">
+          <a ng-click="tab.setTab('programma')" href="#">Programma</a></li>
+        <li ng-class="{ active:tab.isSet('location') }">
+          <a ng-click="tab.setTab('location')" href="#">Locatie</a></li>
+        <li ng-class="{ active:tab.isSet('ceremony') }">
+          <a ng-click="tab.setTab('ceremony')" href="#">Ceremoniemeesters</a></li>
+        <li ng-class="{ active:tab.isSet('guests') }">
+          <a ng-click="tab.setTab('guests')" href="#">Gasten</a>     
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" ng-class="{ active:tab.isSet('toggle') }" ng-click="tab.setTab('toggle')"  href="#" data-toggle="dropdown">Gast informatie<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Foto's</a></li>
+            <li><a href="#">Kado tips</a></li>
+            <li><a href="#">Overnachten</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

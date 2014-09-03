@@ -1,0 +1,259 @@
+/* Flexible iFrame */
+/* line 3, ../sass/_location.scss */
+.Flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 11, ../sass/_location.scss */
+.Flexible-container iframe,
+.Flexible-container object,
+.Flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 2, ../sass/_guests.scss */
+.table-guests a {
+  color: #edd35d;
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_index.scss */
+.thumb-index {
+  position: relative;
+  background-color: red;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 1, ../sass/_index.scss */
+  .thumb-index {
+    height: 350px;
+  }
+}
+
+/* line 12, ../sass/_index.scss */
+.thumb-index:hover {
+  background-color: #edd35d;
+  opacity: 0.8;
+  box-shadow: 0px 0px 5px 10px rgba(177, 121, 21, 0.71);
+}
+/* line 16, ../sass/_index.scss */
+.thumb-index:hover p, .thumb-index:hover h3 {
+  color: #663300;
+  opacity: 1.0;
+}
+
+/* line 1, ../sass/_navbar.scss */
+.navbar-default {
+  background-color: rgba(72, 51, 3, 0.9) !important;
+  opacity: 1;
+  border: none !important;
+}
+/* line 6, ../sass/_navbar.scss */
+.navbar-default a {
+  color: #edd35d !important;
+}
+/* line 10, ../sass/_navbar.scss */
+.navbar-default a:hover {
+  text-shadow: 0px 0px 10px #f5ff00 !important;
+}
+
+/* line 17, ../sass/_navbar.scss */
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover,
+.dropdown-toggle > .active {
+  background-color: #edd35d;
+  color: rgba(72, 51, 3, 0.9) !important;
+}
+
+/* line 27, ../sass/_navbar.scss */
+.dropdown-menu {
+  background-color: rgba(72, 51, 3, 0.9) !important;
+}
+/* line 30, ../sass/_navbar.scss */
+.dropdown-menu a:hover {
+  color: rgba(72, 51, 3, 0.9) !important;
+  background-color: #edd35d !important;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("/bootstrap/fonts/glyphicons-halflings-regular.eot");
+  src: url("/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+/* line 19, ../sass/main.scss */
+.row {
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+/* line 24, ../sass/main.scss */
+.table-striped {
+  margin-top: 25px;
+}
+
+/* line 28, ../sass/main.scss */
+.table-striped:hover {
+  text-decoration: none;
+}
+
+/* line 33, ../sass/main.scss */
+body {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  background-color: #663300;
+}
+
+/* line 41, ../sass/main.scss */
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  z-index: -1;
+  background-image: url("/images/central-park.jpg");
+}
+
+/* line 55, ../sass/main.scss */
+h1, h2, h3, h4 {
+  color: #edd35d;
+  /*  text-shadow:0px 0px 50px #FFFF00;*/
+}
+
+/* line 60, ../sass/main.scss */
+h1 small {
+  color: #edd35d;
+}
+
+/* line 69, ../sass/main.scss */
+.thumbnail {
+  background-color: #663300;
+  box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
+}
+
+/* line 74, ../sass/main.scss */
+.caption {
+  color: #FF9933 !important;
+}
+
+/* line 82, ../sass/main.scss */
+p {
+  color: #edd35d;
+}
+
+/* line 86, ../sass/main.scss */
+.thumbnail {
+  border-color: #edd35d;
+  background-color: transparent;
+}
+
+/* line 91, ../sass/main.scss */
+.table {
+  background-color: none;
+  color: #edd35d;
+}
+
+/*Panels*/
+/* line 100, ../sass/main.scss */
+.panel {
+  background: none;
+  border-color: #edd35d;
+  box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
+}
+/* line 105, ../sass/main.scss */
+.panel .panel-heading {
+  background-color: rgba(72, 51, 3, 0.9) !important;
+  color: #edd35d !important;
+}
+/* line 110, ../sass/main.scss */
+.panel .panel-title {
+  color: #edd35d;
+}
+/* line 114, ../sass/main.scss */
+.panel .panel-body {
+  background-color: #663300;
+  opacity: 0.9;
+}
+
+/* line 120, ../sass/main.scss */
+.page-header {
+  border-color: #edd35d !important;
+}
+
+/* line 124, ../sass/main.scss */
+.carousel-inner {
+  border-color: #edd35d !important;
+  border: 1px solid;
+  border-radius: 5px !important;
+  box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
+}
+@media all and (max-width: 500px) {
+  /* line 131, ../sass/main.scss */
+  .carousel-inner .carousel-caption h2 {
+    font-size: 18px !important;
+  }
+}
+
+/* line 138, ../sass/main.scss */
+img {
+  opacity: 0.9;
+}
+
+/* line 143, ../sass/main.scss */
+.btn {
+  background-color: #734F02;
+  border-color: #edd35d;
+}
+
+/* line 148, ../sass/main.scss */
+.btn-primary:hover {
+  background-color: #edd35d;
+  color: #734F02;
+  border-color: #edd35d;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 154, ../sass/main.scss */
+  .thumb-overnachten {
+    height: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 154, ../sass/main.scss */
+  .thumb-overnachten {
+    height: 600px;
+  }
+}
+
+/* line 167, ../sass/main.scss */
+a.thumb-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  /* Makes sure the link doesn't get underlined */
+  z-index: 10;
+  /* raises anchor tag above everything else in div */
+  background-color: white;
+  /*workaround to make clickable in IE */
+  opacity: 0;
+  /*workaround to make clickable in IE */
+  filter: alpha(opacity=0);
+  /*workaround to make clickable in IE */
+}

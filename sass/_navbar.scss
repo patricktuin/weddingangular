@@ -1,0 +1,35 @@
+.navbar-default{
+  background-color: $navbar-background-color !important;
+  opacity: 1;
+  border: none !important;
+
+  	a {
+  		color: $h-color !important;
+	}
+    
+    a:hover{
+        text-shadow: $h-color-shadow !important;
+    }
+            
+}
+
+
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus
+.navbar .nav > li > a:focus, 
+.navbar .nav > li > a:hover,
+.dropdown-toggle > .active { 
+background-color: $h-color; 
+color: $navbar-background-color !important; 
+} 
+
+.dropdown-menu{
+  background-color: $navbar-background-color !important;
+
+	a:hover {
+  		color: $navbar-background-color !important;
+  		background-color: $h-color !important;
+	}
+}
+
