@@ -4,7 +4,7 @@ app.config(function($routeProvider) {
     $routeProvider.
     	when('/', {
 			templateUrl: "templates/home.html",
-			controller: "AppCtrl"
+
 		}).
 		when('/programma', {
 			templateUrl: "templates/programma.html",
@@ -53,7 +53,16 @@ app.controller("TabController", function() {
 	this.setTab = function(setTab) {
 		this.tab = setTab;
 	};
+});
 
+app.controller("ThumbController", function() {
+	this.thumb = 0;
 
+	this.isSet = function(checkThumb) {
+		return this.thumb === checkThumb;
+	};
 
+	this.setThumb = function(setThum) {
+		this.thumb = setThumb;
+	};
 });
