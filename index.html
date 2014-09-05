@@ -13,11 +13,13 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
-<div ng-include src="'navbar.html'" ng-controller="TabController as tab"></div>
+<div ng-include src="'templates/navbar.html'" ng-controller="TabController as tab"></div>
 
-<div ng-include src="'home.html'"></div>
+<div class="container">
+	<div class="alert alert-danger" role="alert">Deze pagina is nog in ontwikkeling. Het kan dus zijn dat er nog zaken wijzigen.</div>
+</div>
 
-
+<div class="ng-view"></div>
 
 </body>
 </html>
