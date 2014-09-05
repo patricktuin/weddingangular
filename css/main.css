@@ -61,16 +61,16 @@
 }
 /* line 10, ../sass/_navbar.scss */
 .navbar-default a:hover {
-  text-shadow: 0px 0px 10px #f5ff00 !important;
+  text-shadow: rgba(72, 51, 3, 0.9) !important;
 }
 
-/* line 17, ../sass/_navbar.scss */
+/* line 16, ../sass/_navbar.scss */
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover,
-.dropdown-toggle > .active {
+.dropdown-toggle.active {
   background-color: #edd35d;
   color: rgba(72, 51, 3, 0.9) !important;
 }

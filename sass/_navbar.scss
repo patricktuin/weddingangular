@@ -8,9 +8,8 @@
 	}
     
     a:hover{
-        text-shadow: $h-color-shadow !important;
+        text-shadow: $navbar-background-color !important;
     }
-            
 }
 
 
@@ -19,9 +18,10 @@
 .navbar .nav > .active > a:focus
 .navbar .nav > li > a:focus, 
 .navbar .nav > li > a:hover,
-.dropdown-toggle > .active { 
-background-color: $h-color; 
-color: $navbar-background-color !important; 
+.dropdown-toggle.active {
+
+  background-color: $h-color; 
+  color: $navbar-background-color !important; 
 } 
 
 .dropdown-menu{
