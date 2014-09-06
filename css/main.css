@@ -100,33 +100,43 @@
   background-color: #edd35d !important;
 }
 
+/* line 1, ../sass/_kados.scss */
+.kados {
+  text-align: center;
+}
+/* line 3, ../sass/_kados.scss */
+.kados .kado-image {
+  display: block;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot");
   src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
-/* line 17, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
 .alert {
   text-align: center;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .row {
   margin-bottom: 0px;
   margin-top: 30px;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .table-striped {
   margin-top: 25px;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 .table-striped:hover {
   text-decoration: none;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 body {
   padding-top: 90px;
   padding-bottom: 70px;
@@ -135,7 +145,7 @@ body {
   background-color: #663300;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 body:before {
   content: "";
   position: absolute;
@@ -148,73 +158,73 @@ body:before {
   background-image: url("/images/central-park.jpg");
 }
 
-/* line 57, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 h1, h2, h3, h4 {
   color: #edd35d;
   /*  text-shadow:0px 0px 50px #FFFF00;*/
 }
 
-/* line 62, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 h1 small {
   color: #edd35d;
 }
 
-/* line 71, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .thumbnail {
   background-color: #663300;
   box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
 }
 
-/* line 76, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 .caption {
   color: #FF9933 !important;
 }
 
-/* line 84, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 p {
   color: #edd35d;
 }
 
-/* line 88, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .thumbnail {
   border-color: #edd35d;
   background-color: transparent;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .table {
   background-color: none;
   color: #edd35d;
 }
 
 /*Panels*/
-/* line 102, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .panel {
   background: none;
   border-color: #edd35d;
   box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
 }
-/* line 107, ../sass/main.scss */
+/* line 108, ../sass/main.scss */
 .panel .panel-heading {
   background-color: rgba(72, 51, 3, 0.9) !important;
   color: #edd35d !important;
 }
-/* line 112, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .panel .panel-title {
   color: #edd35d;
 }
-/* line 116, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .panel .panel-body {
   background-color: #663300;
   opacity: 0.9;
 }
 
-/* line 122, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .page-header {
   border-color: #edd35d !important;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .carousel-inner {
   border-color: #edd35d !important;
   border: 1px solid;
@@ -222,24 +232,24 @@ p {
   box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
 }
 @media all and (max-width: 500px) {
-  /* line 133, ../sass/main.scss */
+  /* line 134, ../sass/main.scss */
   .carousel-inner .carousel-caption h2 {
     font-size: 18px !important;
   }
 }
 
-/* line 140, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 img {
   opacity: 0.9;
 }
 
-/* line 145, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 .btn {
   background-color: #734F02;
   border-color: #edd35d;
 }
 
-/* line 150, ../sass/main.scss */
+/* line 151, ../sass/main.scss */
 .btn-primary:hover {
   background-color: #edd35d;
   color: #734F02;
@@ -247,19 +257,19 @@ img {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 156, ../sass/main.scss */
+  /* line 157, ../sass/main.scss */
   .thumb-overnachten {
     height: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 156, ../sass/main.scss */
+  /* line 157, ../sass/main.scss */
   .thumb-overnachten {
     height: 600px;
   }
 }
 
-/* line 169, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 a.thumb-link {
   position: absolute;
   width: 100%;

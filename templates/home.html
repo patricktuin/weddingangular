@@ -42,9 +42,7 @@
 	</div>
 </div>
 
-<div class="container" ng-controller="TabController as tab">
-	<h1><div class="btn btn-default" ng-click="tab.setTab('location')">test</div></h1>
-</div>
+
 
 <!--Test met images-->
 <div class="container" ng-controller="ThumbController as thumb">
@@ -63,7 +61,7 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="thumbnail thumb-index" ng-mouseover="thumb.setThumb(2)" ng-mouseleave="thumb.setThumb(0)" ng-class="{thumbdarken: ( thumb.isSet(1) || thumb.isSet(3) || thumb.isSet(4) )}">
+			<div class="thumbnail thumb-index" ng-click="tab.setTab('fotos')" ng-mouseover="thumb.setThumb(2)" ng-mouseleave="thumb.setThumb(0)" ng-class="{thumbdarken: ( thumb.isSet(1) || thumb.isSet(3) || thumb.isSet(4) )}">
 			<img src="/images/fototoestel.jpg" alt="...">
 				<div class="caption">
 					<h3>Foto's</h3>
@@ -75,7 +73,7 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="thumbnail thumb-index" ng-mouseover="thumb.setThumb(3)" ng-mouseleave="thumb.setThumb(0)" ng-class="{thumbdarken: ( thumb.isSet(1) || thumb.isSet(2) || thumb.isSet(4) )}">
+			<div class="thumbnail thumb-index" ng-click="tab.setTab('kados')" ng-mouseover="thumb.setThumb(3)" ng-mouseleave="thumb.setThumb(0)" ng-class="{thumbdarken: ( thumb.isSet(1) || thumb.isSet(2) || thumb.isSet(4) )}">
 			<img src="/images/kados.jpg" alt="...">
 				<div class="caption">
 					<h3>Kado Tips</h3>
@@ -88,7 +86,7 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="thumbnail thumb-index" ng-mouseover="thumb.setThumb(4)" ng-mouseleave="thumb.setThumb(0)" ng-class="{thumbdarken: ( thumb.isSet(1) || thumb.isSet(2) || thumb.isSet(3) )}">
+			<div class="thumbnail thumb-index" ng-click="tab.setTab('overnachten')" ng-mouseover="thumb.setThumb(4)" ng-mouseleave="thumb.setThumb(0)" ng-class="{thumbdarken: ( thumb.isSet(1) || thumb.isSet(2) || thumb.isSet(3) )}">
 			<img src="/images/hotel.jpg" alt="...">
 				<div class="caption">
 					<h3>Overnachten</h3>
