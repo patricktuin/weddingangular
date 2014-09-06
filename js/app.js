@@ -36,33 +36,30 @@ app.config(function($routeProvider) {
     	});
 });
 
-app.controller("AppCtrl", function($scope) {
-    $scope.model = {
-        message: "This is my app!!!"
-    }
-});
 
 
 app.controller("TabController", function() {
-	this.tab = 1;
-
-	this.isSet = function(checkTab) {
-		return this.tab === checkTab;
-	};
+	this.tab = 0;
 
 	this.setTab = function(setTab) {
 		this.tab = setTab;
+	};
+
+	this.isSet = function(checkTab) {
+		return this.tab === checkTab;
 	};
 });
 
 app.controller("ThumbController", function() {
 	this.thumb = 0;
 
+	this.setThumb = function(setThumb) {
+		this.thumb = setThumb;
+	};
+
 	this.isSet = function(checkThumb) {
 		return this.thumb === checkThumb;
 	};
 
-	this.setThumb = function(setThum) {
-		this.thumb = setThumb;
-	};
+
 });

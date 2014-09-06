@@ -28,7 +28,6 @@
 /* line 1, ../sass/_index.scss */
 .thumb-index {
   position: relative;
-  background-color: red;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* line 1, ../sass/_index.scss */
@@ -37,16 +36,27 @@
   }
 }
 
-/* line 12, ../sass/_index.scss */
+/*.thumb-index{
+  background-color: $background-color;
+  box-shadow: $box-shadow-dark;
+      p, h3 {
+      color: $background-color;
+    }
+}*/
+/* line 18, ../sass/_index.scss */
 .thumb-index:hover {
   background-color: #edd35d;
-  opacity: 0.8;
   box-shadow: 0px 0px 5px 10px rgba(177, 121, 21, 0.71);
 }
-/* line 16, ../sass/_index.scss */
+/* line 21, ../sass/_index.scss */
 .thumb-index:hover p, .thumb-index:hover h3 {
   color: #663300;
-  opacity: 1.0;
+}
+
+/* line 26, ../sass/_index.scss */
+.thumbdarken {
+  opacity: 0.8 !important;
+  background-color: #663300 !important;
 }
 
 /* line 1, ../sass/_navbar.scss */

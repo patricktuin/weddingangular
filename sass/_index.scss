@@ -3,19 +3,27 @@
     height:350px;
   }
   position: relative;
-  background-color: red;
 }
 
 
 
- 
-.thumb-index:hover{
-  background-color: $h-color;
-  opacity: 0.8;
+/*.thumb-index{
+  background-color: $background-color;
   box-shadow: $box-shadow-dark;
       p, h3 {
       color: $background-color;
-      opacity: 1.0;
-
     }
+}*/
+ 
+.thumb-index:hover{
+  background-color: $h-color;
+  box-shadow: $box-shadow-dark;
+      p, h3 {
+      color: $background-color;
+    }
+}
+
+.thumbdarken{
+  opacity: 0.8 !important;
+  background-color: $background-color !important;
 }
