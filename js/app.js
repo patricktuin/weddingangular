@@ -39,7 +39,7 @@ app.config(function($routeProvider) {
 
 
 app.controller("TabController", function() {
-	this.tab = 0;
+	this.tab = 'home';
 
 	this.setTab = function(setTab) {
 		this.tab = setTab;
