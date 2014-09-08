@@ -61,5 +61,22 @@ app.controller("ThumbController", function() {
 		return this.thumb === checkThumb;
 	};
 
+ 
+
+
+app.controller("gastController", function($scope, $http) {
+$scope.gasten= [];
+$http.get('../json/gasten.json').success(function(data) { 
+    console.log("success!");
+    $scope.gasten = data.name;
+        console.log(data.name);
+    });    
+
+
+
+
+
+}); 
+
 
 });
