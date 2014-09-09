@@ -30,6 +30,10 @@ app.config(function($routeProvider) {
 			templateUrl: "templates/kadotips.html",
 			controller: "AppCtrl"
 		}).
+		when('/info', {
+			templateUrl: "templates/info.html",
+			controller: "AppCtrl"
+		}).
     	when('/overnachten', {
  			templateUrl: 'templates/overnachten.html',
         	controller: 'AddOrderController'
