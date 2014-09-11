@@ -1,8 +1,15 @@
-/* line 2, ../sass/_ceremoniemeester.scss */
+@media (max-width: 480px) {
+  /* line 3, ../sass/_ceremoniemeester.scss */
+  .page-header h1 {
+    font-size: 24pt;
+  }
+}
+
+/* line 10, ../sass/_ceremoniemeester.scss */
 .ceremoniemeesters-panel h3 {
   font-size: 24px;
 }
-/* line 6, ../sass/_ceremoniemeester.scss */
+/* line 14, ../sass/_ceremoniemeester.scss */
 .ceremoniemeesters-panel h4 {
   font-size: 16px;
 }
