@@ -11,11 +11,22 @@
 	<script src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link href='http://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
 </head>
 <body ng-controller="TabController as tab">
 
 <!-- navigation bar on top of site -->
 <div class="container" ng-include src="'templates/navbar.html'"></div>
+
+
+<!-- 
+    <div ng-controller="Timer">
+        <h1>AngularJS - Single Timer Example</h1>
+        <h3><timer end-time="1420070400000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer></h3>
+        <button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
+        <button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button>
+    </div> -->
+
 
 <div class="container">
 	<div class="alert alert-danger" role="alert">Deze pagina is nog in ontwikkeling. Er zullen nog zaken worden toegevoegd en aangepast.</div>
