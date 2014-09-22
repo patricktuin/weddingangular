@@ -1,0 +1,310 @@
+/* line 3, ../sass/_ceremoniemeester.scss */
+.email a {
+  font-size: 18px;
+  color: #FFD42B;
+  font-family: bitter;
+}
+
+/* Flexible iFrame */
+/* line 3, ../sass/_location.scss */
+.Flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 11, ../sass/_location.scss */
+.Flexible-container iframe,
+.Flexible-container object,
+.Flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 2, ../sass/_guests.scss */
+.table-guests a {
+  color: #FFD42B;
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_index.scss */
+.jumbotron {
+  background: #874902;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url("/images/patrick.png") no-repeat left center, url("/images/maris.png") no-repeat right center;
+  opacity: 1;
+  color: #FFD42B;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  /* line 1, ../sass/_index.scss */
+  .jumbotron {
+    background: url("/images/wij.png") no-repeat left center;
+  }
+}
+
+/* line 17, ../sass/_index.scss */
+.thumb-index {
+  position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 17, ../sass/_index.scss */
+  .thumb-index {
+    height: 350px;
+  }
+}
+
+/*.thumb-index{
+  background-color: $background-color;
+  box-shadow: $box-shadow-dark;
+      p, h3 {
+      color: $background-color;
+    }
+}*/
+/* line 34, ../sass/_index.scss */
+.thumb-index:hover {
+  background-color: #663300;
+  box-shadow: 0px 0px 5px 5px rgba(177, 121, 21, 0.71);
+}
+/* line 37, ../sass/_index.scss */
+.thumb-index:hover p, .thumb-index:hover h3 {
+  color: #FFD42B;
+}
+
+/* line 1, ../sass/_navbar.scss */
+.navbar-toggle {
+  background-color: rgba(72, 51, 3, 0.9) !important;
+}
+
+/* line 6, ../sass/_navbar.scss */
+.navbar-default {
+  background-color: rgba(72, 51, 3, 0.9) !important;
+  opacity: 1;
+  border: none !important;
+  font-family: bitter;
+}
+/* line 12, ../sass/_navbar.scss */
+.navbar-default a {
+  color: #FFD42B !important;
+}
+/* line 16, ../sass/_navbar.scss */
+.navbar-default a:hover {
+  text-shadow: rgba(72, 51, 3, 0.9) !important;
+}
+
+/* line 22, ../sass/_navbar.scss */
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover,
+.dropdown-toggle.active {
+  background-color: #FFD42B;
+  color: rgba(72, 51, 3, 0.9) !important;
+}
+
+/* line 33, ../sass/_navbar.scss */
+.dropdown-menu {
+  background-color: rgba(72, 51, 3, 0.9) !important;
+}
+/* line 36, ../sass/_navbar.scss */
+.dropdown-menu a:hover {
+  color: rgba(72, 51, 3, 0.9) !important;
+  background-color: #FFD42B !important;
+}
+
+/* line 1, ../sass/_kados.scss */
+.kados {
+  text-align: center;
+}
+/* line 3, ../sass/_kados.scss */
+.kados .kado-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_overnachten.scss */
+.thumb-overnachten:hover {
+  background-color: #663300;
+  box-shadow: 0px 0px 5px 5px rgba(177, 121, 21, 0.71);
+}
+/* line 4, ../sass/_overnachten.scss */
+.thumb-overnachten:hover p, .thumb-overnachten:hover h3 {
+  color: #FFD42B;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot");
+  src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  font-family: 'Bitter', serif;
+}
+/* line 23, ../sass/main.scss */
+.alert {
+  text-align: center;
+}
+
+/* line 27, ../sass/main.scss */
+.row {
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+/* line 35, ../sass/main.scss */
+body {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  background-color: #663300;
+}
+
+/* line 45, ../sass/main.scss */
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  z-index: -1;
+  background-image: url("/images/central-park.jpg");
+}
+
+/* line 60, ../sass/main.scss */
+h1, h2, h3, h4 {
+  color: #FFD42B;
+  font-family: bitter;
+  /*  text-shadow:0px 0px 50px #FFFF00;*/
+}
+
+/* line 66, ../sass/main.scss */
+h1 small {
+  color: #FFD42B;
+}
+
+/* line 77, ../sass/main.scss */
+.caption {
+  color: #FF9933 !important;
+}
+
+/* line 85, ../sass/main.scss */
+p {
+  color: #FFD42B;
+}
+
+/* line 89, ../sass/main.scss */
+.thumbnail {
+  border-color: #FFD42B;
+  background-color: transparent;
+}
+
+/* line 94, ../sass/main.scss */
+.table {
+  background-color: none;
+  color: #FFD42B;
+  border: none;
+}
+
+/*Panels*/
+/* line 106, ../sass/main.scss */
+.panel {
+  background: none;
+  border-color: #FFD42B;
+  box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
+}
+/* line 111, ../sass/main.scss */
+.panel .panel-heading {
+  background-color: rgba(72, 51, 3, 0.9) !important;
+  color: #FFD42B !important;
+}
+/* line 116, ../sass/main.scss */
+.panel .panel-title {
+  color: #FFD42B;
+}
+/* line 120, ../sass/main.scss */
+.panel .panel-body {
+  background-color: #663300;
+  opacity: 0.9;
+}
+
+/* line 126, ../sass/main.scss */
+.page-header {
+  border-color: #FFD42B !important;
+}
+
+/* line 130, ../sass/main.scss */
+.carousel-inner {
+  border-color: #FFD42B !important;
+  border: 1px solid;
+  border-radius: 5px !important;
+  box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
+}
+@media all and (max-width: 500px) {
+  /* line 137, ../sass/main.scss */
+  .carousel-inner .carousel-caption h2 {
+    font-size: 18px !important;
+  }
+}
+
+/* line 144, ../sass/main.scss */
+img {
+  opacity: 0.9;
+}
+
+/* line 150, ../sass/main.scss */
+.btn {
+  background-color: #734F02;
+  border-color: #FFD42B;
+}
+
+/* line 155, ../sass/main.scss */
+.btn-primary:hover {
+  background-color: #FFD42B;
+  color: #734F02;
+  border-color: #FFD42B;
+}
+
+/* line 161, ../sass/main.scss */
+.thumbnail {
+  border: none;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 167, ../sass/main.scss */
+  .thumb-overnachten {
+    height: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 167, ../sass/main.scss */
+  .thumb-overnachten {
+    height: 600px;
+  }
+}
+
+/* line 180, ../sass/main.scss */
+a.thumb-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  /* Makes sure the link doesn't get underlined */
+  z-index: 10;
+  /* raises anchor tag above everything else in div */
+  background-color: white;
+  /*workaround to make clickable in IE */
+  opacity: 0;
+  /*workaround to make clickable in IE */
+  filter: alpha(opacity=0);
+  /*workaround to make clickable in IE */
+}

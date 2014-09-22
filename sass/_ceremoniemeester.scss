@@ -1,17 +1,9 @@
-.page-header {
-	@media(max-width: 480px) {
-  h1 {
-    font-size: 24pt;
-  }
-}
-}
-
-.ceremoniemeesters-panel{
-	h3{
-		font-size: 24px;
+.email {
+	// color: $h-color;
+	a {
+		font-size: 18px;
+		color: #FFD42B;
+		font-family: bitter;
 	}
-
-	h4 {
-		font-size: 16px
-	}
+	
 }

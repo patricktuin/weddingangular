@@ -1,11 +1,18 @@
-<div class="container text-center">
-	<img src="/images/spreuk.png" class="img-responsive" align="center">
-</div>
+<!-- Carousel -->
+<div class="container" ng-controller="TabController as tab">
+
+
+	<div class="jumbotron">
+		<h1>Welkom</h1>
+		<h2>Op de bruiloft site van Patrick en Mariska</h2>
+		<p>Hier zal de komende tijd meer informatie worden toegevoegd</p>
+	</div>
 
 
 
+<!--Test met images-->
 
-<div class="container">
+<!-- <h1>thumb{{thumb.isSet(3)}}</h1> -->
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<div class="thumbnail thumb-index" ng-click="tab.setTab('location')" ng-mouseover="thumb.setThumb(1)" ng-mouseleave="thumb.setThumb(0)" ng-class="{thumbdarken: ( thumb.isSet(2) || thumb.isSet(3) || thumb.isSet(4) )}">
@@ -67,9 +74,8 @@
 				</div>
 			</div> 
 		</div>
+	</div>
 </div>
-
-
 
 <!-- google anayltics -->
 <div class="container" ng-include src="'templates/analytics.html'"></div>

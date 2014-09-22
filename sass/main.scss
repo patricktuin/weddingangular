@@ -1,0 +1,196 @@
+@import 'ceremoniemeester';
+@import 'location';
+@import 'colors';
+@import 'guests';
+@import 'index';
+@import 'navbar';
+@import 'kados';
+@import 'overnachten';
+@import 'info';
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot');
+  src: url('/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+       url('/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff') format('woff'), 
+       url('/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  font-family: 'Bitter', serif;
+}
+
+
+
+.alert{
+  text-align:center;
+}
+
+.row{
+	margin-bottom: 0px;
+  	margin-top: 30px;
+}
+
+
+
+
+body {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  background-color: $background-color;
+
+
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .5; 
+  z-index: -1;
+
+  background-image: url('/images/central-park.jpg');
+
+
+}
+
+h1, h2, h3, h4{
+  color: $h-color;
+  font-family: bitter;
+/*  text-shadow:0px 0px 50px #FFFF00;*/
+}
+
+h1 small{
+  color: $small-letters;
+}
+
+
+
+
+
+
+
+
+.caption{
+  color: #FF9933 !important;
+}
+
+
+
+
+
+p{
+  color:$small-letters;
+}
+
+.thumbnail{
+  border-color: $h-color;
+  background-color: transparent;
+}
+
+.table{
+  background-color: none;
+  color: $h-color;
+  border:none;
+
+
+
+}
+
+
+/*Panels*/
+
+.panel {
+    background: none;
+    border-color: $h-color;
+    box-shadow: $box-shadow;
+	
+	.panel-heading {
+  		background-color: $navbar-background-color !important;
+  		color: $small-letters !important;
+	}
+
+	.panel-title{
+  		color: $h-color;
+	}
+
+  .panel-body{
+    background-color: $background-color;
+    opacity: 0.9;
+  }
+}
+
+.page-header{
+  border-color: $h-color !important;
+}
+
+.carousel-inner{
+  border-color: $h-color !important;
+  border: 1px solid;
+  border-radius: 5px !important;
+  box-shadow: $box-shadow;
+
+  	@media all and (max-width: 500px) {
+		.carousel-caption h2{
+			font-size: 18px !important;
+		}
+	}
+}
+
+
+img{
+  opacity: 0.9;
+
+
+}
+
+.btn{
+  background-color: $button-background;
+  border-color: $h-color; 
+} 
+
+.btn-primary:hover{
+  background-color: $h-color;
+  color: $button-background;
+  border-color: $h-color;
+}
+
+.thumbnail{
+  // background-color: #663300;
+  // box-shadow: $box-shadow;
+  border: none;
+}
+
+.thumb-overnachten{
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    height:550px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height:600px;
+  }
+}
+
+
+
+ 
+a.thumb-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}

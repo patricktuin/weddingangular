@@ -54,6 +54,21 @@ app.controller("TabController", function() {
 	};
 });
 
+
+app.controller("Timer", function() {
+	this.tab = 'home';
+
+	this.setTab = function(setTab) {
+		this.tab = setTab;
+	};
+
+	this.isSet = function(checkTab) {
+		return this.tab === checkTab;
+	};
+});
+
+
+
 app.controller("ThumbController", function() {
 	this.thumb = 0;
 
@@ -65,8 +80,6 @@ app.controller("ThumbController", function() {
 		return this.thumb === checkThumb;
 	};
 
- 
-
 
 app.controller("gastController", function($scope, $http) {
 $scope.gasten= [];
@@ -77,10 +90,27 @@ $http.get('../json/gasten.json').success(function(data) {
     });    
 
 
-
-
-
 }); 
 
-
 });
+
+
+app.controller('Timer', function($scope) {
+    $scope.timerRunning = true;
+
+    $scope.startTimer = function (){
+        $scope.$broadcast('timer-start');
+        $scope.timerRunning = true;
+    };
+
+    $scope.stopTimer = function (){
+        $scope.$broadcast('timer-stop');
+        $scope.timerRunning = false;
+    };
+
+    $scope.$on('timer-stopped', function (event, data){
+        console.log('Timer Stopped - data = ', data);
+    });
+    MyAppController.$inject = ['$scope'];
+});
+ 
