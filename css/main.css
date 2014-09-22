@@ -1,3 +1,10 @@
+/* line 3, ../sass/_ceremoniemeester.scss */
+.email a {
+  font-size: 18px;
+  color: #FFD42B;
+  font-family: bitter;
+}
+
 /* Flexible iFrame */
 /* line 3, ../sass/_location.scss */
 .Flexible-container {
@@ -35,13 +42,19 @@
   color: #FFD42B;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  /* line 1, ../sass/_index.scss */
+  .jumbotron {
+    background: url("/images/wij.png") no-repeat left center;
+  }
+}
 
-/* line 15, ../sass/_index.scss */
+/* line 17, ../sass/_index.scss */
 .thumb-index {
   position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 15, ../sass/_index.scss */
+  /* line 17, ../sass/_index.scss */
   .thumb-index {
     height: 350px;
   }
@@ -54,12 +67,12 @@
       color: $background-color;
     }
 }*/
-/* line 33, ../sass/_index.scss */
+/* line 34, ../sass/_index.scss */
 .thumb-index:hover {
   background-color: #663300;
   box-shadow: 0px 0px 5px 5px rgba(177, 121, 21, 0.71);
 }
-/* line 36, ../sass/_index.scss */
+/* line 37, ../sass/_index.scss */
 .thumb-index:hover p, .thumb-index:hover h3 {
   color: #FFD42B;
 }
@@ -143,17 +156,7 @@
   margin-top: 30px;
 }
 
-/* line 32, ../sass/main.scss */
-.table-striped {
-  margin-top: 25px;
-}
-
-/* line 36, ../sass/main.scss */
-.table-striped:hover {
-  text-decoration: none;
-}
-
-/* line 41, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 body {
   padding-top: 90px;
   padding-bottom: 70px;
@@ -162,7 +165,7 @@ body {
   background-color: #663300;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 body:before {
   content: "";
   position: absolute;
@@ -175,68 +178,69 @@ body:before {
   background-image: url("/images/central-park.jpg");
 }
 
-/* line 66, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 h1, h2, h3, h4 {
   color: #FFD42B;
   font-family: bitter;
   /*  text-shadow:0px 0px 50px #FFFF00;*/
 }
 
-/* line 72, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 h1 small {
   color: #FFD42B;
 }
 
-/* line 83, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 .caption {
   color: #FF9933 !important;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 p {
   color: #FFD42B;
 }
 
-/* line 95, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .thumbnail {
   border-color: #FFD42B;
   background-color: transparent;
 }
 
-/* line 100, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .table {
   background-color: none;
   color: #FFD42B;
+  border: none;
 }
 
 /*Panels*/
-/* line 109, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .panel {
   background: none;
   border-color: #FFD42B;
   box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
 }
-/* line 114, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .panel .panel-heading {
   background-color: rgba(72, 51, 3, 0.9) !important;
   color: #FFD42B !important;
 }
-/* line 119, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .panel .panel-title {
   color: #FFD42B;
 }
-/* line 123, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .panel .panel-body {
   background-color: #663300;
   opacity: 0.9;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .page-header {
   border-color: #FFD42B !important;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 .carousel-inner {
   border-color: #FFD42B !important;
   border: 1px solid;
@@ -244,49 +248,49 @@ p {
   box-shadow: 0px 0px 10px 5px rgba(186, 113, 35, 0.75);
 }
 @media all and (max-width: 500px) {
-  /* line 140, ../sass/main.scss */
+  /* line 137, ../sass/main.scss */
   .carousel-inner .carousel-caption h2 {
     font-size: 18px !important;
   }
 }
 
-/* line 147, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 img {
   opacity: 0.9;
 }
 
-/* line 153, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .btn {
   background-color: #734F02;
   border-color: #FFD42B;
 }
 
-/* line 158, ../sass/main.scss */
+/* line 155, ../sass/main.scss */
 .btn-primary:hover {
   background-color: #FFD42B;
   color: #734F02;
   border-color: #FFD42B;
 }
 
-/* line 164, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .thumbnail {
   border: none;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 170, ../sass/main.scss */
+  /* line 167, ../sass/main.scss */
   .thumb-overnachten {
     height: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 170, ../sass/main.scss */
+  /* line 167, ../sass/main.scss */
   .thumb-overnachten {
     height: 600px;
   }
 }
 
-/* line 183, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 a.thumb-link {
   position: absolute;
   width: 100%;

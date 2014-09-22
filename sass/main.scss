@@ -29,13 +29,7 @@
   	margin-top: 30px;
 }
 
-.table-striped{
-	margin-top: 25px;
-}
 
-.table-striped:hover{
-	text-decoration: none;
-}
 
 
 body {
@@ -100,8 +94,11 @@ p{
 .table{
   background-color: none;
   color: $h-color;
-}
+  border:none;
 
+
+
+}
 
 
 /*Panels*/

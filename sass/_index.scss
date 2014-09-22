@@ -1,12 +1,14 @@
 .jumbotron{
     background: #874902; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-   
     background: url('/images/patrick.png') no-repeat left center, url('/images/maris.png') no-repeat right center;
     opacity: 1;
     color: $h-color;
     text-align: center;
-
+    
+    @media screen and  (max-width: 767px) {
+      background: url('/images/wij.png') no-repeat left center;
+    }
 
 }
 
@@ -15,7 +17,6 @@
 .thumb-index{
   @media screen and (min-width: 768px) and (max-width: 992px) {
     height:350px;
-  
   }
   position: relative;
 }
