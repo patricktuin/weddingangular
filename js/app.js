@@ -40,6 +40,18 @@ app.config(function($routeProvider) {
     	});
 });
 
+	
+app.controller("collapseController", function($rootScope){
+	$rootScope.$on('$routeChangeSuccess', function() {
+        var toggle = angular.element('.navbar-toggle');
+        if (!toggle.hasClass('collapsed')) {
+            angular.element('.navbar-collapse').removeClass('in').addClass('collapsed');
+        }
+	});
+});
+
+
+
 
 
 app.controller("TabController", function() {
@@ -82,16 +94,13 @@ app.controller("ThumbController", function() {
 
 
 app.controller("gastController", function($scope, $http) {
-$scope.gasten= [];
-$http.get('../json/gasten.json').success(function(data) { 
-    console.log("success!");
-    $scope.gasten = data.name;
-        console.log(data.name);
-    });    
-
-
-}); 
-
+	$scope.gasten= [];
+	$http.get('../json/gasten.json').success(function(data) { 
+	    console.log("success!");
+	    $scope.gasten = data.name;
+	        console.log(data.name);
+	    });    
+	}); 
 });
 
 
