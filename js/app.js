@@ -4,39 +4,39 @@ app.config(function($routeProvider) {
     $routeProvider.
     	when('/', {
 			templateUrl: "templates/home.html",
-
+			
 		}).
 		when('/programma', {
 			templateUrl: "templates/programma.html",
-			controller: "AppCtrl"
+			// controller: "AppCtrl"
 		}).
 		when('/locatie', {
 			templateUrl: "templates/locatie.html",
-			controller: "AppCtrl"
+			// controller: "AppCtrl"
 		}).
 		when('/ceremoniemeesters', {
 			templateUrl: "templates/ceremoniemeesters.html",
-			controller: "AppCtrl"
+			// controller: "AppCtrl"
 		}).
 		when('/gasten', {
 			templateUrl: "templates/gasten.html",
-			controller: "AppCtrl"
+			// controller: "AppCtrl"
 		}).
 		when('/fotos', {
 			templateUrl: "templates/fotos.html",
-			controller: "AppCtrl"
+			// controller: "AppCtrl"
 		}).
 		when('/kadotips', {
 			templateUrl: "templates/kadotips.html",
-			controller: "AppCtrl"
+			// controller: "AppCtrl"
 		}).
 		when('/info', {
 			templateUrl: "templates/info.html",
-			controller: "AppCtrl"
+			// controller: "AppCtrl"
 		}).
     	when('/overnachten', {
  			templateUrl: 'templates/overnachten.html',
-        	controller: 'AddOrderController'
+        	// controller: 'AddOrderController'
     	});
 });
 
@@ -46,6 +46,7 @@ app.controller("collapseController", function($rootScope){
         var toggle = angular.element('.navbar-toggle');
         if (!toggle.hasClass('collapsed')) {
             angular.element('.navbar-collapse').removeClass('in').addClass('collapsed');
+
         }
 	});
 });
@@ -93,33 +94,34 @@ app.controller("ThumbController", function() {
 	};
 
 
-app.controller("gastController", function($scope, $http) {
-	$scope.gasten= [];
-	$http.get('../json/gasten.json').success(function(data) { 
-	    console.log("success!");
-	    $scope.gasten = data.name;
-	        console.log(data.name);
-	    });    
-	}); 
+// app.controller("gastController", function($scope, $http) {
+// 	$scope.gasten= [];
+// 	$http.get('../json/gasten.json').success(function(data) { 
+// 	    console.log("success!");
+// 	    $scope.gasten = data.name;
+// 	        console.log(data.name);
+// 	    });    
+// 	}); 
 });
 
 
-app.controller('Timer', function($scope) {
-    $scope.timerRunning = true;
+// app.controller('Timer', function($scope) {
+//     $scope.timerRunning = true;
 
-    $scope.startTimer = function (){
-        $scope.$broadcast('timer-start');
-        $scope.timerRunning = true;
-    };
+//     $scope.startTimer = function (){
+//         $scope.$broadcast('timer-start');
+//         $scope.timerRunning = true;
+//     };
 
-    $scope.stopTimer = function (){
-        $scope.$broadcast('timer-stop');
-        $scope.timerRunning = false;
-    };
+//     $scope.stopTimer = function (){
+//         $scope.$broadcast('timer-stop');
+//         $scope.timerRunning = false;
+//     };
 
-    $scope.$on('timer-stopped', function (event, data){
-        console.log('Timer Stopped - data = ', data);
-    });
-    MyAppController.$inject = ['$scope'];
-});
- 
+//     $scope.$on('timer-stopped', function (event, data){
+//         console.log('Timer Stopped - data = ', data);
+//     });
+//     MyAppController.$inject = ['$scope'];
+// });
+
+

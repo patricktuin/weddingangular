@@ -1,3 +1,16 @@
+#daysToWedding{
+  border-style: solid;
+  border-color: $h-color;
+  margin-bottom: 5px;
+  h1{
+    text-align: center;
+  }
+}
+
+.progress-bar{
+  background-color: $background-color;
+}
+
 .jumbotron{
     background: #874902; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
