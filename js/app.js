@@ -22,6 +22,10 @@ app.config(function($routeProvider) {
 			templateUrl: "templates/info/vakantie.html",
 			// controller: "AppCtrl"
 		}).
+		when('/speech', {
+			templateUrl: "templates/info/speeches.html",
+			// controller: "AppCtrl"
+		}).
 		when('/kadotip', {
 			templateUrl: "templates/info/kadotip.html",
 			// controller: "AppCtrl"
