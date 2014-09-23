@@ -10,6 +10,26 @@ app.config(function($routeProvider) {
 			templateUrl: "templates/programma.html",
 			// controller: "AppCtrl"
 		}).
+		when('/dresscode', {
+			templateUrl: "templates/info/dresscode.html",
+			// controller: "AppCtrl"
+		}).
+		when('/fotos', {
+			templateUrl: "templates/info/fotos.html",
+			// controller: "AppCtrl"
+		}).
+		when('/vakantie', {
+			templateUrl: "templates/info/vakantie.html",
+			// controller: "AppCtrl"
+		}).
+		when('/kadotip', {
+			templateUrl: "templates/info/kadotip.html",
+			// controller: "AppCtrl"
+		}).
+		when('/music', {
+			templateUrl: "templates/info/music.html",
+			// controller: "AppCtrl"
+		}).
 		when('/locatie', {
 			templateUrl: "templates/locatie.html",
 			// controller: "AppCtrl"
@@ -20,14 +40,6 @@ app.config(function($routeProvider) {
 		}).
 		when('/gasten', {
 			templateUrl: "templates/gasten.html",
-			// controller: "AppCtrl"
-		}).
-		when('/fotos', {
-			templateUrl: "templates/fotos.html",
-			// controller: "AppCtrl"
-		}).
-		when('/kadotips', {
-			templateUrl: "templates/kadotips.html",
 			// controller: "AppCtrl"
 		}).
 		when('/info', {
