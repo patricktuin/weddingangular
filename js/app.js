@@ -50,6 +50,10 @@ app.config(function($routeProvider) {
 			templateUrl: "templates/info.html",
 			// controller: "AppCtrl"
 		}).
+		when('/programma', {
+			templateUrl: "templates/info/programma.html",
+			// controller: "AppCtrl"
+		}).
     	when('/overnachten', {
  			templateUrl: 'templates/overnachten.html',
         	// controller: 'AddOrderController'
@@ -67,6 +71,59 @@ app.controller("collapseController", function($rootScope){
 	});
 });
 
+
+app.controller("guestController", function($scope, $http) {
+	$scope.formData = {};
+
+	$http.get('http://127.0.0.1:8080/api/wedding')
+		.success(function(data) {
+			$scope.guests = data;
+			console.log(data);
+			$scope.checked = "checked";
+		})
+		.error(function(data) {
+			console.log('Error: ' + data);
+		});
+
+	$scope.changeAttend = function(id) {
+		$http.get('http://127.0.0.1:8080/api/wedding/' + id)
+		.success(function(data) {
+			$scope.guest = data;
+			console.log(data);
+			$scope.checked = "checked";
+		})
+		.error(function(data) {
+			console.log('Error: ' + data);
+		});
+	}	
+	
+	$scope.addGuest = function() {
+	$http.post('/api/wedding', $scope.formData)
+		.success(function(data) {
+			$scope.formData = {}; // clear the form so our user is ready to enter another
+			$scope.sausages = data;
+			console.log(data);
+		})
+		.error(function(data) {
+			console.log('Error: ' + data);
+		});
+	};
+
+	// delete a coffee 
+	$scope.deleteGuest = function(id) {
+		$http.delete('/api/wedding/' + id)
+			.success(function(data) {
+				$scope.guest = data;
+				console.log(data);
+			})
+
+			.error(function(data) {
+				console.log('Error: ' + data);
+			});
+	};
+
+
+}); 
 
 
 
