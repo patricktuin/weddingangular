@@ -206,12 +206,13 @@ body {
   position: relative;
   z-index: 1;
   background-color: #663300;
+  height: 100%;
 }
 
 /* line 45, ../sass/main.scss */
 body:before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
